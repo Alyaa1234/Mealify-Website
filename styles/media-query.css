@@ -1,0 +1,273 @@
+/* media-guery */
+@media screen and (min-width: 550px){
+    /* Home section */
+    .home-content-container{
+        width: 70%;
+    }
+    /* Chefs section */
+    .chefs-content-container{
+        width:70%;
+        margin-inline: auto;
+        padding: 40px 5px;
+    }
+    /* Gallery section */
+    .gallery-content-container{
+        width:72%;
+        padding: 40px 5px;
+    }
+    /* Footer */
+    .footer-content-container{
+        width:80%;
+        margin-block: 50px;
+        padding: 40px 5px;
+    }
+    .footer-section-2 form{
+        margin-block: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .footer-section-2 form input{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    /* Chefs section */
+    .chefs-content-container{
+        width:95%;
+    }
+    .chefs-cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .chef-card{
+        width:calc(calc(100% / 2) - 30px);
+    }
+    /* Gallery section */
+    .gallery-content-container{
+        width: 90%;
+    }
+    .gallery-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 15px; 
+    }
+    .pizza{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        order: 1;
+    }
+    .burger{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        order: 2;
+    }
+    .pizza-clices{
+        grid-column: 1/2;
+        grid-row: 3/6;
+        order: 3;
+    }
+    .frittata{
+        grid-column: 1/2;
+        grid-row: 6/8;
+        order: 4;
+    }
+    .beef-steak{
+        grid-column: 2/-1;
+        grid-row: 1/4;
+        order: 5;
+    }
+    .fried-chicken{
+        grid-column: 2/-1;
+        grid-row: 4/5;
+        order:6;
+    }
+    .kebab{
+        grid-column: 2/-1;
+        grid-row: 5/7;
+        order:7;
+    } 
+    /* Contact section */
+    .contact-content-container{
+        width:70%;
+        padding: 40px 5px;
+    }
+    /* Footer */
+    .footer-content-container{
+        width:95%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-block: 0;
+    }
+    .footer-section-1{
+        width: calc(calc(100% / 2) - 10px);
+    }
+    .footer-section-3{
+        width: calc(calc(100% / 2) - 10px);
+        order:2
+    }
+    .footer-section-2{
+        width: 100%;
+        order:3
+    }
+}
+
+@media screen and (min-width: 990px){
+    /* Home section */
+    .home-content-container{
+        width: 95%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 5px;
+        gap: 0;
+    }
+    .home-content,
+    .home-img-container{
+        width: 40%;
+        text-align: left;
+    }
+    .home-content > *{
+        width: 100%;
+    }
+    .home-buttons-container{
+        justify-content: initial;
+        gap: 40px;
+    }
+    .home-button-1{
+        border-radius:  0px 100px 100px;
+    }
+    /* Chefs section */
+    .chefs-content-container{
+        width:95%;
+    }
+    .chefs-cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .chef-card{
+        width:calc(calc(100% / 3) - 20px);
+    }
+    /* Gallery section */
+    .gallery-cards-container{
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        column-gap: 15px; 
+    }
+    .pizza{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .pizza-clices{
+        grid-column: 1/2;
+        grid-row: 2/5;
+    }
+    .beef-steak{
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    .frittata{
+        grid-column: 2/3;
+        grid-row: 4/6;
+    }
+    .burger{
+        grid-column: 3/-1;
+        grid-row: 1/2;
+    }
+    .fried-chicken{
+        grid-column: 3/-1;
+        grid-row: 2/3;
+    }
+    .kebab{
+        grid-column: 3/-1;
+        grid-row: 3/5;
+    } 
+    /*Contact section  */
+    .contact-content .cards-container{
+        margin-block: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    .card{
+        width: calc(calc(100% / 2) - 15px);
+        text-align: left;
+        padding: 25px;
+        background-color: hsl( 0, 0%, 96% );
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    /* Navbar */
+    .nav-content-container{
+        justify-content: space-around;
+    }
+    .container-nav-links{
+        display: flex;
+        gap:30px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .container-nav-links .link a{
+        color: var(--color-tertiary);
+    }
+    .mode-icons-container svg.menu-icon {
+        display: none;
+    }
+    /* Home section */
+    #home{
+        height: 100vh;
+    }
+    .home-content > *{
+        width: 90%;
+    }
+    /* Chefs section */
+    .chefs-content-container{
+        width:80%;
+    }
+    /* Gallery section */
+    .user-info{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .user-info input{
+        width:calc(calc(100% / 2) - 7px); 
+    }
+    .footer-section-1{
+        width: 25%;
+    }
+    .footer-section-2{
+        width: 45%;
+        order:2
+    }
+    .footer-section-3{
+        width: 25%;
+        order:3
+    }
+}
+
+@media screen and (min-width: 1441px){
+    /* Home + Chefs sections */
+    .home-content-container,
+    .chefs-content-container{
+        width: 70%;
+    }
+    /* Gallery section */
+    .gallery-content-container{
+        width:70%;
+    }
+    /* Footer */
+    .footer-content-container{
+        width:75%;
+    }
+}
