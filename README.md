@@ -21,7 +21,7 @@ Mealify is a responsive and modern landing page for restaurants. Built using HTM
 - Optimize image loading  
 
 ## 🌐 Live Demo  
-[Click to view live](https://Alyaa1234.github.io/Mealify-Website)
+[Click to view live](https://alyaa1234.github.io/Mealify-Website/)
 
 ## 🖼️ Screenshots  
 ![Mealify Screenshot](./imgs/website-full-screen-shoot.png)
