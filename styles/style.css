@@ -60,10 +60,11 @@ nav{
     display: flex;
     gap: 25px;
 }
-.mode-icons-container svg path{
-    fill: var(--color-default);
+.mode-icons-container i{
+    color: var(--color-default);
+    font-size: 25px;
 }
-.mode-icons-container .sun-icon{
+.mode-icons-container .fa-sun{
     display: none;
 }
 
@@ -92,6 +93,23 @@ nav{
 }
 .home-img-container{
     filter: drop-shadow(4px 4px 19px rgba(0, 0, 0, 0.667));
+}
+.home-img-container:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 .home-content h2{
     font-size: 65px;
@@ -133,6 +151,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    font-size: 22px;
 }
 
 
@@ -202,7 +221,7 @@ nav{
     position: absolute;
     top: 30px;
     right: 10px;
-    transform: translateX(150%)
+    transform: translateX(150%);
 }
 .chef-card:hover .chef-card-header ul{
     transform: translateX(0);
@@ -211,11 +230,12 @@ nav{
 .chef-card-header ul li{
     padding: 10px 5px;
 }
-.chef-card-header svg path{
-    fill: #37373f66;
+.chef-card-header i{
+    color: #37373f66;
+    font-size: 22px;
 }
-.chef-card-header svg:hover path{
-    fill: #37373fe6;
+.chef-card-header i:hover{
+    color: #37373fe6;
 }
 .chef-card-content{
     padding: 10px 25px 25px 25px;
@@ -343,8 +363,9 @@ iframe{
     border-radius: 50%;
     background-color: var(--color-primary);
 }
-.icon svg path{
-    fill:hsl( 0, 0%, 100% );
+.icon i{
+    color:hsl( 0, 0%, 100% );
+    font-size: 22px;
 } 
 .card .content h3{
     font-size: 20px;
@@ -441,8 +462,9 @@ footer {
     display: flex;
     justify-content: space-around;
 }
-.footer-section-1 ul li a svg path{
-    fill: #fff;
+.footer-section-1 ul li a i{
+    font-size: 20px;
+    color: #fff;
 }
 .footer-section-2 form{
     margin-block: 20px;
@@ -461,8 +483,8 @@ footer {
     border: none;
     font-size: 15px;
 }
-.footer-section-2 form path{
-    fill: #fff;
+.footer-section-2 form i{
+    color: #fff;
 }
 .quick-access-links{
     list-style: none;
@@ -483,9 +505,8 @@ footer {
     background-color: rgb(34, 34, 34);
 }
 .quick-access-links li a,
-.quick-access-links li svg path{
+.quick-access-links li i{
     color: #fff;
-    fill: #fff;
 } 
 .footer-section-3 ul{
     list-style: none;
@@ -498,7 +519,8 @@ footer {
     color: #fff;
     height: 40px;
 }
-.footer-section-3 ul li svg path{
-    fill: var(--color-primary);
+.footer-section-3 ul li i{
+    color: var(--color-primary);
+    font-size: 20px;
 }
 

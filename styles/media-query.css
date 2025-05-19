@@ -220,7 +220,7 @@
     .container-nav-links .link a{
         color: var(--color-tertiary);
     }
-    .mode-icons-container svg.menu-icon {
+    .mode-icons-container i.menu-icon {
         display: none;
     }
     /* Home section */
